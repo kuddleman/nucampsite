@@ -14,11 +14,12 @@
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>NuCamp: A Better Way To Camp</title>
   </head>
@@ -133,7 +134,7 @@
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
                   <a role="button" data-toggle="modal" data-target="#loginModal">
@@ -239,14 +240,9 @@
               <span class="carousel-control-next-icon"></span>
               <span class="sr-only">Next</span>
             </a>  
-            <div class="btn-group" id="carouselButton">
-              <button class="btn btn-sm btn-danger" id="carouselPause">
-                <i class="fa fa-pause"></i>
-              </button>
-              <button class="btn btn-sm btn-danger" id="carouselPlay">
-                <i class="fa fa-play"></i>
-              </button>
-            </div>
+            <button class="btn btn-sm btn-danger" id="carouselButton">
+              <i class="fa fa-pause"></i>
+            </button>  
           </div>
         </div>
       </div>
@@ -310,92 +306,13 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="row row-content">
-          <div class="col col-sm-6 mx-auto">
-            <div class="card">
-              <h3 class="card-header bg-info text-white">
-                Reserve a Campsite
-              </h3>
-              <div class="card-body"> -->
-                <!-- <form action="">
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="Number of Campers" class="col col-sm-6">Number of Campters</label>
-                        <select class="form-control" name="numCampers" id="numCampers">
-                            <option value="select">select</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-group">
-                      <label for="date" class="col-sm-6">Date</label>
-                      <div class="col-sm-6">
-                        <input class="form-control" type="date" id="date" name="date" placeholder="date">
-                      </div>  
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <button class="btn btn-primary">Search</button>
-                    </div>
-                  </div>
-                </form> -->
-
-                <!-- SECOND ATTEMPT -->
-
-                <!-- Create form here -->
-             
-                <!-- <form id="reserveForm">
-                  <div class="row">
-                    <div class="form-group">
-                      <label for="numberOfCampers">Number of Campers</label>
-                      <select class="form-control" name="numCampers" id="numCampers">
-                        <option value="select">select</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-group">
-                        <label for="date" class="col col-sm-6">Date</label>
-                        <div>
-                          <input class="form-control col col-sm-6" type="date" id="date" name="date" placeholder="date">
-                        </div>  
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <button type="submit" class="btn btn-primary">Search</button>
-                    </div>
-                  </div>
-
-
-             
-                </form> -->
-              
-
-
-              </div>
+      </div>
             </div>
           </div>
         </div>
     </div>
 
-    <footer>
+    <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-4 col-sm-2 offset-1">
@@ -404,19 +321,26 @@
               <li><a href="#">Home</a></li>
               <li><a href="aboutus.html">About</a></li>
               <li><a href="#">Sites</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contactus.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-6 col-sm-5 text-center">
             <h5>Social</h5>
-            <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-            <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-            <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-          </div>
-          <div class="col-sm-4 text-center">
-            <i class="fa fa-phone fa-lg"></i> 1-206-555-1234<br />
-            <i class="fa fa-envelope fa-lg"></i> campsites@nucamp.co
+            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="col-sm-4 text-center">
+            <a role="button" class="btn btn-link" 
+               href="tel:+12065551234">
+                <i class="fa fa-phone"></i> 1-206-555-1234
+            </a>
+            <br>
+          <a role="button" class="btn btn-link" 
+               href="mailto:lala@lala.la">
+               <i class="fa fa-envelope-o"></i> campsites@nucamp.co
+            </a>
           </div>
         </div>
       </div>
@@ -427,16 +351,6 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script>
-      $(function(){
-        $(".carousel").carousel({interval: 2000});
-        $("#carouselPause").click(function(){
-          $(".carousel").carousel("pause");
-        });
-        $("#carouselPlay").click(function(){
-          $(".carousel").carousel("cycle");
-        })
-      });
-    </script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
